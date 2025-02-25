@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Growth Hub - Observations</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="observation.html" class="active">Observations</a></li>
+            <li><a href="goals.html">Goals</a></li>
+            <li><a href="analytics.html">Analytics</a></li>
+            <li><a href="forum.html">Community Forum</a></li>
+            <li><a href="#" id="logoutBtn">Logout</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Observations</h1>
+        <div id="observationList"></div>
+        <h2>New Observation</h2>
+        <form id="observationForm">
+            <input type="date" id="observationDate" required>
+            <textarea id="observationNotes" placeholder="Observation notes" required></textarea>
+            <button type="submit">Submit Observation</button>
+        </form>
+    </div>
+    <script src="sample_data.js"></script>
+    <script src="observation.js"></script>
+</body>
+</html>

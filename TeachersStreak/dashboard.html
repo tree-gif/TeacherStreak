@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Growth Hub - Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="dashboard.html" class="active">Dashboard</a></li>
+            <li><a href="observation.html">Observations</a></li>
+            <li><a href="goals.html">Goals</a></li>
+            <li><a href="analytics.html">Analytics</a></li>
+            <li><a href="forum.html">Community Forum</a></li>
+            <li><a href="#" id="logoutBtn">Logout</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Welcome, <span id="teacherName"></span>!</h1>
+        <div class="dashboard-grid">
+            <div class="card">
+                <h2>Recent Feedback</h2>
+                <ul id="recentFeedback"></ul>
+            </div>
+            <div class="card">
+                <h2>Goal Progress</h2>
+                <div id="goalProgress"></div>
+            </div>
+            <div class="card">
+                <h2>Upcoming Observations</h2>
+                <ul id="upcomingObservations"></ul>
+            </div>
+            <div class="card">
+                <h2>Recommended Learning</h2>
+                <ul id="recommendedLearning"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="sample_data.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+</html>
