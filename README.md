@@ -1,0 +1,2 @@
+# TeacherStreak
+HackerEarth hackathon project
