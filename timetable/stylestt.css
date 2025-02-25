@@ -432,3 +432,34 @@ h1, h2, h3 {
         min-height: auto;
     }
 }
+
+/* Return to Dashboard Link */
+.return-to-dashboard {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+.return-to-dashboard a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0.8rem 1.2rem;
+    background: linear-gradient(135deg, #4ecdc4, #45b7d1);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.return-to-dashboard a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.return-to-dashboard i {
+    font-size: 1.1rem;
+}
