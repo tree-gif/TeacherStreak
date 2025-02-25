@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Calendar</title>
+    <link rel="stylesheet" href="stylestt.css">
+</head>
+<body>
+    <header>
+        <h1>Teacher Timetable Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="daytt.html">Daily View</a></li>
+                <li><a href="weektt.html">Weekly Overview</a></li>
+                <li><a href="monthtt.html" class="active">Monthly Calendar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Monthly Calendar</h2>
+        <div id="month-selector">
+            <button id="prev-month">&lt;</button>
+            <span id="current-month-year"></span>
+            <button id="next-month">&gt;</button>
+        </div>
+        <div id="monthly-calendar">
+            <!-- Calendar will be dynamically generated here -->
+        </div>
+        <div id="milestone-objectives">
+            <h3>Milestone Objectives</h3>
+            <ul id="milestone-list"></ul>
+            <form id="add-milestone-form">
+                <input type="text" id="new-milestone" placeholder="New milestone objective">
+                <button type="submit">Add Milestone</button>
+            </form>
+        </div>
+    </main>
+    <div id="add-task-modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Add Task</h2>
+            <form id="add-task-form">
+                <input type="date" id="task-date" required>
+                <input type="text" id="task-input" placeholder="Enter task" required>
+                <select id="task-status">
+                    <option value="not-started">Not Started</option>
+                    <option value="in-progress">In Progress</option>
+                    <option value="completed">Completed</option>
+                </select>
+                <button type="submit">Add Task</button>
+            </form>
+        </div>
+    </div>
+    <script src="scriptstt.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Overview</title>
+    <link rel="stylesheet" href="stylestt.css">
+</head>
+<body>
+    <header>
+        <h1>Teacher Timetable Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="daytt.html">Daily View</a></li>
+                <li><a href="weektt.html" class="active">Weekly Overview</a></li>
+                <li><a href="monthtt.html">Monthly Calendar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Weekly Overview</h2>
+        <div id="week-selector">
+            <button id="prev-week">&lt;</button>
+            <span id="week-range"></span>
+            <button id="next-week">&gt;</button>
+        </div>
+        <div id="weekly-timetable"></div>
+        <div id="weekly-overview">
+            <!-- Weekly data will be dynamically generated here -->
+        </div>
+        <div id="weekly-summary">
+            <h3>Weekly Summary</h3>
+            <div id="implementation-metrics"></div>
+            <div id="improvement-areas"></div>
+            <div id="training-success"></div>
+        </div>
+    </main>
+    <script src="scriptstt.js"></script>
+</body>
+</html>

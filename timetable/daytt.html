@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Timetable</title>
+    <link rel="stylesheet" href="stylestt.css">
+</head>
+<body>
+    <header>
+        <h1>Teacher Timetable Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="daytt.html" class="active">Daily View</a></li>
+                <li><a href="weektt.html">Weekly Overview</a></li>
+                <li><a href="monthtt.html">Monthly Calendar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Daily Timetable</h2>
+        <div id="date-selector">
+            <button id="prev-day">&lt;</button>
+            <input type="date" id="selected-date">
+            <button id="next-day">&gt;</button>
+        </div>
+        <div id="daily-timetable"></div>
+        <div id="daily-schedule">
+            <!-- Time slots will be dynamically generated here -->
+        </div>
+    </main>
+    <script src="scriptstt.js"></script>
+</body>
+</html>
